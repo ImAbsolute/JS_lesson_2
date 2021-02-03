@@ -73,7 +73,7 @@ function operationPlus(arg1, arg2) {
     let summ = arg1 + arg2;
     return summ;
 }
-// console.log(operationPlus(a, b));
+console.log(operationPlus(a, b));
 
 function operationMinus(arg1, arg2) {
     let minus = arg1 - arg2;
@@ -85,11 +85,13 @@ function operationMultiplication(arg1, arg2) {
     let multiplication = arg1 * arg2;
     return multiplication;
 }
+// console.log(operationMultiplication(a, x));
 
 function operationDivide(arg1, arg2) {
     let divide = arg1 / arg2;
     return divide;
 }
+// console.log(operationDivide(a, x));
 
 
 function mathOperation(arg1, arg2, operation) {
@@ -109,4 +111,13 @@ function mathOperation(arg1, arg2, operation) {
     }
 }
 
-console.log(mathOperation(a, b, operationPlus));
+// console.log(mathOperation(a, b, 'operationPlus'));
+
+function power(val, pow) {
+    if (pow == 1) {
+        return val;
+    } else {
+        return val * power(val, pow - 1);
+    }
+}
+// console.log(power(3, 4));
